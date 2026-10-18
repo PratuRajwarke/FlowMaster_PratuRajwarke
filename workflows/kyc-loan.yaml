@@ -1,0 +1,10 @@
+# verify then credit. if credit fails, undo verification.
+name: kyc-loan
+
+steps:
+  - name: verification
+    start_command: start_verification
+    undo_command: undo_verification
+
+  - name: credit_check
+    start_command: start_credit_check

@@ -1,0 +1,14 @@
+{
+  "name": "flowmaster",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple KYC loan saga for freshers",
+  "scripts": {
+    "install:all": "npm install --prefix shared && npm install --prefix services/orchestrator && npm install --prefix services/verification && npm install --prefix services/credit",
+    "start:orchestrator": "npm start --prefix services/orchestrator",
+    "start:verification": "npm start --prefix services/verification",
+    "start:credit": "npm start --prefix services/credit",
+    "demo:happy": "node scripts/demo.js happy",
+    "demo:fail": "node scripts/demo.js fail"
+  }
+}
